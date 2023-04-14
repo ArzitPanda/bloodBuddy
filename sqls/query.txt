@@ -1,0 +1,17 @@
+SELECT * FROM  hospital  inner join blood_present on hospital.idhospital = blood_present.mid 
+inner join blood on blood.idBlood=blood_present.bid;
+
+
+
+
+SELECT sum(count) FROM  hospital  inner join blood_present on hospital.idhospital = blood_present.mid 
+inner join blood on blood.idBlood=blood_present.bid   Group by blood.group having blood.group='A+';
+
+
+
+
+SELECT * from bloodrequest inner join hospital on hospital.idhospital=Mid inner join blood on idBlood=Bid where Uid =1
+
+
+
+select * from bloodpresent inner join blood on bid=idBlood where mid=''
